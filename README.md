@@ -62,6 +62,9 @@ A) Escreva uma função que receba uma equação matemática qualquer e retorne 
    <p align="justify">
 B) Considerando a função elaborada no item (a), crite uma segunda função que apresente a operação matemática em notação prefixa e posfixa. Veja alguns exemplos na tabela abaixo (i.e., Tabela 1.)
   </p>
+  <p align="center">
+	  <img align="center" height="300px" width="300px" src="imgs/tabela1.png"/> 
+  </p>
    <p align="justify">
 C) Elabore uma função que receba uma pilha P1 com 20 posições preenchidas por númerosinteiros aleatórios entre 1 e 99. Para cada número da pilha, utilize a função totiente de Euler para encontrar para esse número os co-primos. Mostre-os na tela como resultado de sua execução.
   </p>
