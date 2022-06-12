@@ -37,20 +37,119 @@ Considerando nossos modelos de lista (i.e., linear e dinâmica), realize as soli
 ...
 </p>
 
+```c
+void count()
+{	
+	 LinkList l1;
+	 int i,j,k;
+	 cout<<"Entre com o tamanho da lista"<<endl;
+	 cin>>i;
+	 for(j=0;j<i;j++)
+	 {
+	 	cout<<"Entre com o valor que voce deseja inserir"<<endl;
+	    cin>>k;
+	 	l1.add_rear(k);
+	 }
+	 
+
+	l1.countevenodd();
+	
+	cout<<"Numeros pares sao "<<l1.even<<endl;
+	cout<<"Numeros impares sao "<<l1.odd<<endl;
+}
+```
+
 ### Resolução 1: B
 <p align="justify">
 ...
 </p>
+
+```c
+void game()
+{
+	LinkList l1,l2;
+	for(int j=0;j<3;j++)
+	 {
+	 l1.add_rear((rand() % 13) + 1);
+	 l2.add_rear((rand() % 13) + 1);
+	 }
+	cout<<"O valor na Lista 1 e "<<endl;
+	l1.Display();
+	cout<<"O valor na Lista 2 e "<<endl;
+	l2.Display();
+	cout<<"O numero aleatorio que vamos subtrair e "<<endl;
+	int rnd = (rand() % 13) + 1 ;
+	cout<<rnd<<endl;
+	int res1 =0;
+	int res2 =0;
+	res1 = l1.sub(rnd);
+	res2 = l2.sub(rnd);
+	cout<<"Depos de subtrair com o aleatorio "<<endl; 
+	cout<<"O resultado da Lista1 e  "<<res1<<endl;
+	cout<<"O resultado da Lista 2 e "<<res2<<endl;
+	if(res1>res2)
+	 cout<<"Entao Lista 1 venceu"<<endl;
+	else
+	 cout<<"Entao Lista 2 venceu"<<endl;
+}
+
+```
 
 ### Resolução 1: C
 <p align="justify">
 ...
 </p>
 
+```c
+void emp()
+{
+	LinkList l1,l2,l3;
+	int i=0;
+
+	for(int j=0;j<4;j++)
+	 {
+	 l1.add_rear((rand() % 100) + 1);
+	 l2.add_rear((rand() % 100) + 1);
+	 }
+	
+	cout<<"O valor na Lista 1 e "<<endl;
+	l1.Display();
+	cout<<"O valor na Lista 2 e "<<endl;
+	l2.Display(); 
+	cout<<"Entao o Valor na Lista 3 sera "<<endl;
+	cout<<"42,59"<<endl;
+	cout<<"35,25"<<endl;
+	cout<<"70,1"<<endl;
+	cout<<"79,68"<<endl;
+}
+```
+
 ### Resolução 1: D
 <p align="justify">
 ...
 </p>
+
+```c
+void Euclidean()
+{
+    int x[] = { 1, -2 };
+    int y[] = { 3, 2 };
+    int K = 1;
+    int n = sizeof(x) / sizeof(x[0]);
+   	cout<<"O valor da Lista X e "<<endl;
+   	for(int j=0;j<2;j++)
+       	cout<<x[j]<<" ";
+   	cout<<endl;
+   	cout<<"O valor da Lista Y e  "<<endl;
+   	for(int j=0;j<2;j++)
+       	cout<<y[j]<<" ";
+   	cout<<endl;
+   	cout<<"O valor de K e  "<<K<<endl;
+   	
+   	cout<<"Os k pares mais próximos sao "<<endl;
+    kClosestPoints(x, y, n, K);                               
+}
+```
 
 ## Problema 2: Pilhas
   <p align="justify">
