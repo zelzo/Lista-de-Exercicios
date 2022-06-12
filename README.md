@@ -220,6 +220,11 @@ Essa função aplica uma equação matemática aos números em uma linha para pr
 Essa função pega um conjunto de filas e calcula o índice de cada fila de acordo com os itens nela contidos. O conjunto de filas com seus respectivos índices é devolvido ao usuário.
 </p>
 
+### Resolução 3: D
+<p align="justify">
+Essa função pega um conjunto de filas e calcula o índice de cada fila de acordo com os itens nela contidos. O conjunto de filas com seus respectivos índices é devolvido ao usuário.
+</p>
+
 ## Compilação e Execução
 <p align="justify">
 O código disponibilizado possui um arquivo Makefile que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
