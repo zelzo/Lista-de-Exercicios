@@ -207,17 +207,17 @@ Uma estrutura baseada em fila tem por definição a regra de sempre remover do i
 
 ### Resolução 3: A
 <p align="justify">
-...
+Essa função pega duas filas, ambas de tamanho n, e as divide ao meio para criar duas novas filas. A nova fila irá retornar para o usuário.
 </p>
 
 ### Resolução 3: B
 <p align="justify">
-...
+Essa função aplica uma equação matemática aos números em uma linha para produzir um índice para a fila fornecida como entrada. O índice é retornado junto com a fila para o usuário.
 </p>
 
 ### Resolução 3: C
 <p align="justify">
-...
+Essa função pega um conjunto de filas e calcula o índice de cada fila de acordo com os itens nela contidos. O conjunto de filas com seus respectivos índices é devolvido ao usuário.
 </p>
 
 ## Compilação e Execução
