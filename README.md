@@ -325,7 +325,7 @@ set< queue<int> > funcD(set< queue<int> > s) {
 
 ## Compilação e Execução
 <p align="justify">
-Cada um dos problemas está separado em arquivos diferentes de execução (Problema_1, Problema_2, Problema_3), basta extrair e executa-los no VS Code. O código disponibilizado possui um arquivo Makefile que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
+Cada um dos problemas está separado em arquivos separados de execução (Problema_1, Problema_2, Problema_3), basta extrair e executá-los no VS Code. O código disponibilizado possui um arquivo Makefile que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
 </p>
 
 | Comando                |  Função                                                                                           |                     
