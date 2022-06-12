@@ -222,7 +222,7 @@ Essa função pega um conjunto de filas e calcula o índice de cada fila de acor
 
 ### Resolução 3: D
 <p align="justify">
-Essa função pega um conjunto de filas e calcula o índice de cada fila de acordo com os itens nela contidos. O conjunto de filas com seus respectivos índices é devolvido ao usuário.
+O código acima define func, uma função que recebe um conjunto de filas como entrada e gera outro conjunto. A função percorre o conjunto de entrada, abrindo cada fila e adicionando os valores. Em seguida, ele retorna à fila, empurrando a soma para a fila e subtraindo o valor da soma.
 </p>
 
 ## Compilação e Execução
