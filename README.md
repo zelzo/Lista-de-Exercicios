@@ -59,32 +59,6 @@ void count()
 }
 ```
 
-
-```c
-void countevenodd()
-    {
-    	
-    	
-        Node* temp=head;
-        if(head==NULL)
-        {
-            cout<<"lista esta Vazia"<<endl;
-        }
-        else
-        {
-          while(temp!=NULL)
-          {
-          	if((temp->getData())%2==0)
-          	   even++;
-          	else
-			  odd++;   
-            
-            temp=temp->getNext();
-          }
-        }
-    }
-```
-
 ### Resolução 1: B
 <p align="justify">
 ...
