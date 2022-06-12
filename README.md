@@ -212,24 +212,120 @@ Uma estrutura baseada em fila tem por definição a regra de sempre remover do i
 Essa função pega duas filas, ambas de tamanho n, e as divide ao meio para criar duas novas filas. A nova fila irá retornar para o usuário.
 </p>
 
+```c
+queue<int> funcA(queue<int> q1, queue<int> q2) {
+    int n = q1.size();
+    queue<int> q3, q4;
+    
+    for (int i = 0; i < n/2; i++) {
+        q3.push(q1.front());
+        q1.pop();
+        q3.push(q2.front());
+        q2.pop();
+    }
+    
+    for (int i = 0; i < n/2; i++) {
+        q4.push(q1.front());
+        q1.pop();
+        q4.push(q2.front());
+        q2.pop();
+    }
+    
+    return q3, q4;
+}
+```
+
 ### Resolução 3: B
 <p align="justify">
 Essa função aplica uma equação matemática aos números em uma linha para produzir um índice para a fila fornecida como entrada. O índice é retornado junto com a fila para o usuário.
 </p>
+
+```c
+queue<int> funcB(queue<int> q) {
+    int n = q.size();
+    queue<int> q2;
+    int sum = 0;
+    
+    for (int i = 0; i < n; i++) {
+        sum += q.front();
+        q.pop();
+    }
+    
+    for (int i = 0; i < n; i++) {
+        q2.push(sum);
+        sum -= q.front();
+        q.pop();
+    }
+    
+    return q2;
+}
+```
 
 ### Resolução 3: C
 <p align="justify">
 Essa função pega um conjunto de filas e calcula o índice de cada fila de acordo com os itens nela contidos. O conjunto de filas com seus respectivos índices é devolvido ao usuário.
 </p>
 
+```c
+set< queue<int> > funcC(set< queue<int> > s) {
+    int n = s.size();
+    set< queue<int> > s2;
+    
+    for (int i = 0; i < n; i++) {
+        queue<int> q = s.front();
+        s.pop();
+        int sum = 0;
+        
+        for (int j = 0; j < q.size(); j++) {
+            sum += q.front();
+            q.pop();
+        }
+        
+        for (int j = 0; j < q.size(); j++) {
+            q.push(sum);
+            sum -= q.front();
+            q.pop();
+        }
+        s2.insert(q);
+    }
+    return s2;
+}
+```
+
 ### Resolução 3: D [(b) da C]
 <p align="justify">
 O código acima define func, uma função que recebe um conjunto de filas como entrada e gera outro conjunto. A função percorre o conjunto de entrada, abrindo cada fila e adicionando os valores. Em seguida, ele retorna à fila, empurrando a soma para a fila e subtraindo o valor da soma.
 </p>
 
+```c
+set< queue<int> > funcD(set< queue<int> > s) {
+    int n = s.size();
+    set< queue<int> > s2;
+    
+    for (int i = 0; i < n; i++) {
+        queue<int> q = s.front();
+        s.pop();
+        int sum = 0;
+        
+        for (int j = 0; j < q.size(); j++) {
+            sum += q.front();
+            q.pop();
+        }
+        
+        for (int j = 0; j < q.size(); j++) {
+            q.push(sum);
+            sum -= q.front();
+            q.pop();
+        }
+        s2.insert(q);
+    }
+    return s2;
+}
+```
+
 ## Compilação e Execução
 <p align="justify">
-O código disponibilizado possui um arquivo Makefile que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
+Cada um dos problemas está separado em arquivos diferentes de execução (Problema_1, Problema_2, Problema_3), basta extrair e executa-los no VS Code. O código disponibilizado possui um arquivo Makefile que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
 </p>
 
 | Comando                |  Função                                                                                           |                     
