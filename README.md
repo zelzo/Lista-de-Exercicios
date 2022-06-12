@@ -61,7 +61,8 @@ void count()
 
 ### Resolução 1: B
 <p align="justify">
-...
+Nesse código é criado duas listas, onde cada uma recebe até 3 entradas, sendo cada uma de um número aleatório entre 1 e 13. Em seguida é gerado então outro
+número aleatório de 1 a 13. Por último é apresentado cada lista, e cada par deve ser subtraído do valor aleatório gerado. A lista que for maior vence o jogo.
 </p>
 
 ```c
