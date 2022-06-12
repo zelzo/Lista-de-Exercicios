@@ -229,6 +229,8 @@ void operatar()
 Criou-se os métodos <code>infixToPostfix</code> e <code>infixToPrefix</code> para tratar o problema.
 </p>
 
+<code>infixToPostfix</code> 
+
 ```c
 string infixToPostfix(string infix){
 	infix = '(' + infix + ')';
@@ -276,6 +278,9 @@ string infixToPostfix(string infix){
 	return output;
 }
 ```
+
+<code>infixToPrefix</code>
+
 ```c
 string infixToPrefix(string infix){
 	int l = infix.size();
@@ -296,7 +301,7 @@ string infixToPrefix(string infix){
 }
 ```
 <p align="justify">
-POr fim é criado uma função <code>infix</code> que apresenta a operação matemática em notação prefixa e pósfixa, como nos exemplos apresentados na tabela 1.
+Por fim é criado uma função <code>infix</code> que apresenta a operação matemática em notação prefixa e pósfixa, como nos exemplos apresentados na Tabela 1.
 </p>
 
 ```c
