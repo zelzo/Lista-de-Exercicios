@@ -34,7 +34,7 @@ Considerando nossos modelos de lista (i.e., linear e dinâmica), realize as soli
 
 ### Função Linklist
 <p align="justify">
-Para a premissa do Problema 1, criamos uma funcao <code>LinkList</code> que será usada ao longo de toda resolução de suas alternativas.
+Para a premissa do Problema 1, criamos uma função <code>LinkList</code> que será usada ao longo de toda resolução de suas alternativas.
 </p>
   <p align="center">
 	  <img align="center" src="imgs/linklist.png"/> 
