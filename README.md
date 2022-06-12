@@ -226,7 +226,77 @@ void operatar()
 	   
 ### Resolução 2: B
 <p align="justify">
-Aqui é criado uma função que apresenta a operação matemática em notação prefixa e pósfixa, como nos exemplos apresentados na tabela 1.
+Criou-se os métodos <code>infixToPostfix</code> e <code>infixToPrefix</code> para tratar o problema.
+</p>
+
+```c
+string infixToPostfix(string infix){
+	infix = '(' + infix + ')';
+	int l = infix.size();
+	stack<char> char_stack;
+	string output;
+
+	for (int i = 0; i < l; i++) {
+		if (isalpha(infix[i]) || isdigit(infix[i]))
+			output += infix[i];
+
+		else if (infix[i] == '(')
+			char_stack.push('(');
+
+		else if (infix[i] == ')') {
+			while (char_stack.top() != '(') {
+				output += char_stack.top();
+				char_stack.pop();
+			}
+			char_stack.pop();
+		}
+
+		else{
+			if (isOperator(char_stack.top())){
+				if(infix[i] == '^'){
+					while (getPriority(infix[i]) <= getPriority(char_stack.top())){
+						output += char_stack.top();
+						char_stack.pop();
+					}	
+				}
+				else{
+					while (getPriority(infix[i]) < getPriority(char_stack.top())){
+						output += char_stack.top();
+						char_stack.pop();
+					}	
+				}
+				char_stack.push(infix[i]);
+			}
+		}
+	}
+	while(!char_stack.empty()){
+		output += char_stack.top();
+		char_stack.pop();
+	}
+	return output;
+}
+```
+```c
+string infixToPrefix(string infix){
+	int l = infix.size();
+	reverse(infix.begin(), infix.end());
+	for (int i = 0; i < l; i++) {
+		if (infix[i] == '(') {
+			infix[i] = ')';
+			i++;
+		}
+		else if (infix[i] == ')') {
+			infix[i] = '(';
+			i++;
+		}
+	}
+	string prefix = infixToPostfix(infix);
+	reverse(prefix.begin(), prefix.end());
+	return prefix;
+}
+```
+<p align="justify">
+POr fim é criado uma função <code>infix</code> que apresenta a operação matemática em notação prefixa e pósfixa, como nos exemplos apresentados na tabela 1.
 </p>
 
 ```c
