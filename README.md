@@ -34,7 +34,7 @@ Considerando nossos modelos de lista (i.e., linear e dinâmica), realize as soli
 
 ### Resolução 1: A
 <p align="justify">
-...
+Primeiramente o usuário insere o tamanho da lista que deseja, em seguida adiciona o valor desejado na traseira dessa lista. Em seguida é chamado a função "countevenodd", que conta os números pares e ímpares. Por fim é impresso todos os números pares e ímpares separadamente.
 </p>
 
 ```c
@@ -57,6 +57,32 @@ void count()
 	cout<<"Numeros pares sao "<<l1.even<<endl;
 	cout<<"Numeros impares sao "<<l1.odd<<endl;
 }
+```
+
+
+```c
+void countevenodd()
+    {
+    	
+    	
+        Node* temp=head;
+        if(head==NULL)
+        {
+            cout<<"lista esta Vazia"<<endl;
+        }
+        else
+        {
+          while(temp!=NULL)
+          {
+          	if((temp->getData())%2==0)
+          	   even++;
+          	else
+			  odd++;   
+            
+            temp=temp->getNext();
+          }
+        }
+    }
 ```
 
 ### Resolução 1: B
