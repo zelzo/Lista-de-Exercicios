@@ -32,6 +32,14 @@ Considerando nossos modelos de lista (i.e., linear e dinâmica), realize as soli
 <b>D)</b>  Escreva uma função que receba pares de listas x = [x1, x2, . . . , xn] e y = [y1, y2, . . . , ym] com n, m > 0 e n = m. Calcule a distância euclidiâna entre os múltiplos pares recebidos e encontre os k pares mais próximos.
 </p>
 
+### Função Linklist
+<p align="justify">
+Para a premissa do Problema 1, criamos uma funcao <code>LinkList</code> que será usada ao longo de toda resolução de suas alternativas.
+</p>
+  <p align="center">
+	  <img align="center" src="imgs/linklist.png"/> 
+  </p>
+  
 ### Resolução 1: A
 <p align="justify">
 Primeiramente o usuário insere o tamanho da lista que deseja, em seguida adiciona o valor desejado na traseira dessa lista. Em seguida é chamado a função "countevenodd", que conta os números pares e ímpares. Por fim é impresso todos os números pares e ímpares separadamente.
