@@ -97,7 +97,8 @@ void game()
 
 ### Resolução 1: C
 <p align="justify">
-...
+Na resolução C existe um for que adiciona números aleatórios nas listas 1 e 2. Em seguida imprime os valores dessas listas separamente.
+Também há a utilização da função Display, que é onde há o esvaziamento das duas listas e também onde irá criar a lista 3 com seus recpetivos valores.
 </p>
 
 ```c
