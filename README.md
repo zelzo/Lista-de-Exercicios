@@ -128,7 +128,7 @@ void emp()
 
 ### Resolução 1: D
 <p align="justify">
-...
+Essa função recebe pares de listas e em seguida é calculado a distância euclidiana entre os múltiplos pares recebidos. Também é encontrado os k pares mais próximos.
 </p>
 
 ```c
@@ -175,22 +175,22 @@ void Euclidean()
 
 ### Resolução 2: A
 <p align="justify">
-...
+Essa função recebe uma equação matemática e retorna duas pilhas. Uma dessas contém os operando empilhados da esquerda para a direta e a outra contém os operadores seguindo o mesmo molde.
 </p>
 
 ### Resolução 2: B
 <p align="justify">
-...
+Aqui é criado uma função que apresenta a operação matemática em notação prefixa e pósfixa, como nos exemplos apresentados na tabela 1.
 </p>
 
 ### Resolução 2: C
 <p align="justify">
-...
+Essa função recebe uma pilha com 20 posições com número inteiros e aleatórios de 1 a 99. É utilizado a função totiente de Euler para encontrar os números co-primos.
 </p>
 
 ### Resolução 2: D
 <p align="justify">
-...
+Essa função realiza o cálculo de Fibonacci para um valor de N através de uma pilha, que é utilizada para armazenar os pré-resultados.
 </p>
 
 ## Problema 3: Filas
